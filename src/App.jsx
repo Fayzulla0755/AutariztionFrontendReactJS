@@ -5,6 +5,7 @@ import PostsPage from './pages/PostsPage';
 import AdminPage from "./pages/AdminPage";
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+// import Sliders from "./Components/Sliders/Sliders";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </Routes>
         <ToastContainer  position='top-right' />
     </Layout>
+    // <Sliders />
   )
 }
 

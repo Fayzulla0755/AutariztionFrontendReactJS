@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import instance from '../../utils/axios'
 import { toast } from 'react-toastify';
 
 export default function RegisterPage() {
@@ -19,7 +19,7 @@ export default function RegisterPage() {
   }
   const submitNewUser = async()=>{
     try {
-      const {data} =await axios.post('http://localhost:5000/user',newUser)
+      const {data} =await instance.post('/user',newUser)
       toast(data.message)
     } catch (error) {
       

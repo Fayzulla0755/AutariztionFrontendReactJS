@@ -7,7 +7,7 @@ export default function PostsPage() {
   const [posts, setPosts]= useState([]);
 
   useEffect(()=>{
-   fetch('http://localhost:5000/product')
+   fetch('https://autariztionbackendnodejs-render.onrender.com/product')
    .then(res=>res.json())
    .then(data=>setPosts(data))
    .catch(err=>console.log(err))
