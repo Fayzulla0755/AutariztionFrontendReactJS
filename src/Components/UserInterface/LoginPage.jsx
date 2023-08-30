@@ -1,5 +1,5 @@
 import React from 'react'
-import axios from 'axios'
+import axios from '../../utils/axios'
 import {toast} from 'react-toastify'
 
 export default function LoginPage() {
@@ -18,7 +18,7 @@ export default function LoginPage() {
 
  const  shubmitHandler=  async ()=>{
       try {
-      const {data} =await axios.post('http://localhost:5000/user/signin',{
+      const {data} =await axios.post('/user/signin',{
         user_login:user.login,
         user_password:user.password
       })
